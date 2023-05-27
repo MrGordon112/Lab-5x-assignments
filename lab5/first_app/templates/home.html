@@ -1,0 +1,21 @@
+<html>
+    <body>
+
+<h1>home</h1> 
+
+<a href="{% url 'create-car' %}">create-car</a>
+{% for car in cars %}
+<div>
+    <hr>
+    <a href="{% url 'update-car' car.id %}">update </a>
+
+    <h1>{{car.id}} --<a href="{% url 'car' car.id %}"> {{car.name}} </a> </h1 >
+
+
+        
+<a href="{% url 'delete-car' car.id %}">delete</a>
+</div>
+
+{%endfor%}
+</body>
+</html>
