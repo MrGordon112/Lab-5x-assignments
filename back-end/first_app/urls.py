@@ -23,8 +23,8 @@ urlpatterns = [
     path('carTypes/filter/revenue/<int:revenue>', views.carType_filter_revenue),
     path('mechanics/', views.mechanic_list),
     path('mechanics/<int:id>', views.mechanic_detail),
-    path('repaired/', views.repaired_list),
-    path('repaired/<int:id>', views.repaired_detail),
+    path('repaireds/', views.repaired_list),
+    path('repaireds/<int:id>', views.repaired_detail),
     path('report/age/', views.car_average_age, name='car_average_age'),
 ]
 
